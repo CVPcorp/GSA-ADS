@@ -13,13 +13,19 @@
 		}
 		else
 		{
-			$sql = "INSERT INTO Users (UserName, Password, Email, EmailConfirm)
-			VALUES ('". $UserName ."', '".md5($Password)."', '".$Email."', '".uniqid()."')";
-			
-			if ($conn->query($sql) === TRUE) {
-			    echo "New record created successfully";
-			} else {
-			    echo "Error: " . $sql . "<br>" . $conn->error;
+			$user = $conn->query("SELECT * FROM Users WHERE UserName='".$UserName."'");
+			if($user->num_rows > 0) {
+				return "User already exists.";
+			}
+			else {
+				$sql = "INSERT INTO Users (UserName, Password, Email, EmailConfirm)
+				VALUES ('". $UserName ."', '".md5($Password)."', '".$Email."', '".uniqid()."')";
+				
+				if ($conn->query($sql) === TRUE) {
+				    return "New record created successfully";
+				} else {
+				    return "Error: " . $sql . "<br>" . $conn->error;
+				}
 			}
 		}
 		$conn->close();

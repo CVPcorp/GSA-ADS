@@ -1,2 +1,13 @@
 <?php include('Includes/userFunctions.php'); ?>
-<?php echo submitUser($_POST); ?>
+<?php $result = submitUser($_POST); 
+	if($result == "New record created successfully") {
+		?>
+			<script type="text/javascript">
+				window.location="Login.php";
+			</script>
+		<?php
+	}
+	else {
+		echo $result;
+	}
+?>

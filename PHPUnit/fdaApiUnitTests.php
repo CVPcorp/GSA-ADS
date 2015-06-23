@@ -4,7 +4,8 @@ class NullTest extends PHPUnit_Framework_TestCase
 {
     public function testSearchResult()
     {
-        $this->assertNotNull(searchApi('food'));
+    	$terms['SearchTerm'] = 'Food';
+        $this->assertNotNull(searchApi($terms));
     }
 }
 ?>

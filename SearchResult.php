@@ -1,5 +1,7 @@
-<?php include("Includes/fdaApi.php"); ?>
-<?php $results = searchApi($_POST); ?>
+<?php
+error_reporting(0);
+include("Includes/fdaApi.php"); ?>
+<?php $results = searchApi($_POST);?>
 
 <table width="50%" border="1">
     <thead><tr>

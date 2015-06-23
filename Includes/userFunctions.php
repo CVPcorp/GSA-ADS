@@ -4,9 +4,9 @@
 	function submitUser($User) 
 	{
 		$conn = getConnection();
-		$UserName = $User['UserName'];
-		$Password = $User['Password'];
-		$Email = $User['Email'];
+		$UserName = $conn->real_escape_string($User['UserName']);
+		$Password = $conn->real_escape_string($User['Password']);
+		$Email = $conn->real_escape_string($User['Email']);
 		if(empty($UserName) || empty($Password) || empty($Email) )
 		{
 			return "You're missing fields";
@@ -34,8 +34,8 @@
 	function loginUser($User)
 	{
 		$conn = getConnection();
-		$UserName = $User['UserName'];
-		$Password = $User['Password'];
+		$UserName = $conn->real_escape_string($User['UserName']);
+		$Password = $conn->real_escape_string($User['Password']);
 		
 		$sql = "SELECT * FROM Users WHERE UserName='". $UserName ."' AND Password='".md5($Password)."'";
 		$result = $conn->query($sql);

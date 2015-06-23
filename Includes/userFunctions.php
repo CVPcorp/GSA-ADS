@@ -40,7 +40,9 @@
 		$sql = "SELECT * FROM Users WHERE UserName='". $UserName ."' AND Password='".md5($Password)."'";
 		$result = $conn->query($sql);
 		if ($result->num_rows > 0) {
-			session_start();
+			if(!isset($_SESSION)) {
+				session_start();
+			}
 			$_SESSION["UserName"] = $UserName;
 			return "Logged In";
 		}

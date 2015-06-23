@@ -4,7 +4,7 @@
 	if($result == "Logged In") {
 		?>
 			<script type="text/javascript">
-				window.location = "Index.php";
+				window.location = "index.php";
 			</script>
 		<?php
 	}

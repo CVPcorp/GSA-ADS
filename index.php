@@ -5,37 +5,50 @@
 		die();
 	}
 ?>
-<html>
-<head>
+<?php include("Includes/header.php"); ?>
 <?php include("Includes/fdaApi.php"); ?>
 <script type="text/javascript" src="Scripts/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="Scripts/IndexScripts.js"></script>
-</head>
-<body bgcolor="aqua" style="width: 100%;">
-<div>
-   <table>
-
-       <tr>
-           <td>Recall start date:</td><td><input type="text" id="recalSTDate" /></td>
-           <td>Recall end date: </td><td><input type="text" id="recalENDate" /></td>
-       </tr>
-       <tr>
-           <td>Search: </td><td><input type="text" id="searchTerm" /></td>
-           <td>Submit:</td><td><input type="button" value="Search" onclick="searchAlerts();" /><a onclick="searchMapResults()" style="cursor: hand">Show Map</a></td>
-       </tr>
-   </table>
+<div class="container">
+  <div class="row search">
+    <form>
+      <div class="col-xs-10">
+        <div class="row">
+          <div class="col-xs-4">
+            <div class="form-group">
+              <label for="Search">Search</label>
+              <input type="text" class="form-control" id="searchTerm" placeholder="Search">
+            </div>
+          </div>
+          <div class="col-xs-3">
+            <div class="form-group">
+              <label for="StartDate<">Start Date</label>
+              <input type="text" class="form-control" id="recalSTDate" placeholder="Start Date">
+            </div>
+          </div>
+          <div class="col-xs-3">
+            <div class="form-group">
+              <label for="EndDate<">End Date</label>
+              <input type="text" class="form-control" id="recalENDate" placeholder="End Date">
+            </div>
+          </div>
+        </div>
+        <input type="button" class="btn btn-primary" onclick="searchAlerts();" value="Search" />
+        <button class="btn btn-default"> Reset </button>
+      </div>
+    </form>
+  </div>
+  <div class="row">
+	<script src="http://maps.google.com/maps/api/js?sensor=false"
+	        type="text/javascript"></script>
+	<div id="map" style="width: 1136px; height: 325px;"></div>
+  </div>
+    <div class="row">
+    <div class="col-sm-12">
+		<div id="results"></div>
+    </div>
+    </div>
 </div>
 
-<div>
-<div id="results" style="width:100%;float: left;clear: both"></div>
+<?php include("Includes/footer.php"); ?>
 
-<script src="http://maps.google.com/maps/api/js?sensor=false"
-       type="text/javascript"></script>
-		<div id="map" style="width: 50%; height: 400px;"></div>
-		</div>
-
-<script type="application/javascript">
-
-</script>
-</body>
-</html>

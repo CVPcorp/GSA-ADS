@@ -1,4 +1,3 @@
-
 function searchAlerts() {
 	var model = {
 			SearchTerm: $("#searchTerm").val(),
@@ -9,17 +8,6 @@ function searchAlerts() {
         $("#results").html(data);
     });
 
-    /*$.post("SearchResultMap.php", model, function(mapdata){
-        alert(mapdata);
-    });*/
-}
-
-function searchMapResults(){
-    var model = {
-        SearchTerm: $("#searchTerm").val(),
-        RecalSTDate: $("#recalSTDate").val(),
-        RecalENDate: $("#recalENDate").val()
-    }
     $.post("searchResultMap.php", model, function(data1){
         locations = JSON.parse(data1);
         //alert(locations);
@@ -58,7 +46,4 @@ function searchMapResults(){
         }
     });
     //style="width: 500px; height: 400px;float: left;display: none"s
-
-
-
 }

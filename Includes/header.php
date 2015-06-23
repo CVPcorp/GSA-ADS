@@ -25,13 +25,16 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-    <body class="sign-in">
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+<body>
+<nav class="navbar navbar-inverse">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
       <a class="navbar-brand" href="#">GSA ADS</a> </div>
     <div id="navbar" class="navbar-collapse collapse">
+      <form class="navbar-form navbar-right">
+        <a href="sign-in.html" type="submit" class="btn btn-success">Sign out</a>
+      </form>
     </div>
     <!--/.navbar-collapse --> 
   </div>

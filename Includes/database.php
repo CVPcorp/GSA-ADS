@@ -2,7 +2,7 @@
 function getConnection() {
 	$servername = "localhost";
 	$username = "root";
-	$password = "";
+	$password = "9TTsrqXMWiQi";
 	$database = "gsadb";
 	
 	// Create connection

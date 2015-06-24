@@ -5,7 +5,7 @@
 		<div id="results"></div>
         <h2 class="form-signin-heading">Please sign in</h2>
         <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" id="UserName" class="form-control" placeholder="Email Address" required autofocus>
+        <input type="email" id="UserName" class="form-control" placeholder="User Name" required autofocus>
         <label for="inputPassword" class="sr-only">Password</label>
         <input type="password" id="Password" class="form-control" placeholder="Password" required>
         <div class="checkbox">

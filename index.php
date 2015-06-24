@@ -57,7 +57,7 @@
   <br/>
   <div class="row">
     <div class="col-sm-12">
-		<script src="http://maps.google.com/maps/api/js?sensor=false"
+		<script src="https://maps.google.com/maps/api/js?sensor=false"
 		        type="text/javascript"></script>
 		<div id="map" style="width: 1136px; height: 325px;"></div>
 	</div>

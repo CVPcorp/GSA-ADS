@@ -1,8 +1,10 @@
 function searchAlerts() {
 	var model = {
+			Type: $("input[name='type']:checked").val(),
 			SearchTerm: $("#searchTerm").val(),
             RecalSTDate: $("#recalSTDate").val(),
-            RecalENDate: $("#recalENDate").val()
+            RecalENDate: $("#recalENDate").val(),
+            Limit: $("#limit").val()
 	}
     $.post("SearchResult.php", model, function(data){
         $("#results").html(data);

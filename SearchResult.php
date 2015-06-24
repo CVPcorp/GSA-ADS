@@ -15,8 +15,6 @@ include("Includes/fdaApi.php"); ?>
             </thead>
             <tbody>
 	<?php 
-	$count = 1;
-
 	foreach($results as $result) {?>
         <tr>
             <td><?php echo $result->recalling_firm ?></td>
@@ -27,6 +25,6 @@ include("Includes/fdaApi.php"); ?>
             <td><?php echo $result->product_description?></td>
         </tr>
 
-	<?php $count++; }?>
+	<?php }?>
 		</tbody>
 </table>

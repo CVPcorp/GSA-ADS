@@ -15,7 +15,7 @@
 		}
 		else
 		{
-			$user = $conn->query("SELECT * FROM Users WHERE UserName='".$UserName."' OR Email='" . $Email . "'");
+			$user = $conn->query("SELECT * FROM Users WHERE Email='" . $Email . "'");
 			if($user->num_rows > 0) {
 				return "User already exists.";
 			}

@@ -1,6 +1,5 @@
 <?php include('database.php'); ?>
 <?php 
-
 	function submitUser($User) 
 	{
 		$conn = getConnection();

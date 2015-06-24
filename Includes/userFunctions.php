@@ -17,7 +17,7 @@
 		{
 			$user = $conn->query("SELECT * FROM Users WHERE Email='" . $Email . "'");
 			if($user->num_rows > 0) {
-				return "User already exists.";
+				return "That email address is already registered. Click <a href='Login.php'>here</a> to login. Please contact the system administrator if you need your password reset.";
 			}
 			else {
 				$sql = "INSERT INTO Users (UserName, Password, Email, EmailConfirm)

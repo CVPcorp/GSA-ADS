@@ -9,7 +9,7 @@
     <meta name="author" content="">
  
 
-    <title>Signin</title>
+    <title>FDA Enforcement Reports Mapping Prototype</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">

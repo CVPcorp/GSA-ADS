@@ -1,3 +1,4 @@
+
 function searchAlerts() {
 	var model = {
 			Type: $("input[name='type']:checked").val(),

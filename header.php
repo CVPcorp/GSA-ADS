@@ -17,52 +17,40 @@
     <!-- Custom styles for this template -->
     <link href="css/sign-in.css" rel="stylesheet">
 
-      <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-      <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-      <link rel="stylesheet" href="resources/demos/style.css">
-      <script>
-          $(function() {
-              $( "#recalENDate" ).datepicker({
-                  changeMonth: true,
-                  changeYear: true,
-                  dateFormat: 'yymmdd',
-                  showAnim:'slide'
-                  //minDate: -20,
-                  //maxDate: "+1M +10D"
+ 
 
-              });
-              $( "#recalSTDate" ).datepicker({
-                  changeMonth: true,
-                  changeYear: true,
-                  dateFormat: 'yymmdd',
-                  showAnim:'slide'
-                  //minDate: -20,
-                  //maxDate: "+1M +10D"
-              });
-          });
-      </script>
-
-      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+      <script type="text/javascript" src="Scripts/jquery-1.11.3.min.js"></script>
+      <script type="text/javascript" src="Scripts/IndexScripts.js"></script>
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+      <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+      <link rel="stylesheet" href="/resources/demos/style.css">
+      <script>
+          $(function() {
+              $( "#recalENDate" ).datepicker({
+                  changeMonth: true,
+                  changeYear: true
+              });
+              $( "#recalSTDate" ).datepicker({
+                  changeMonth: true,
+                  changeYear: true
+              });
+s          });
+      </script>
+
   </head>
-<body>
-<nav class="navbar navbar-inverse">
+    <body class="sign-in">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
       <a class="navbar-brand" href="#">GSA ADS</a> </div>
     <div id="navbar" class="navbar-collapse collapse">
-    <?php 
-    	if(isset($_SESSION['UserName'])) {
-    ?> 
-      <form class="navbar-form navbar-right">
-        <a href="LogOut.php" type="submit" class="btn btn-success">Sign out</a>
-      </form>
-    <?php } ?>
     </div>
     <!--/.navbar-collapse --> 
   </div>

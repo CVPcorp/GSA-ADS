@@ -1,13 +1,12 @@
 <?php 
 	session_start();
-	if(is_null($_SESSION["UserName"])) {
+	/*if(is_null($_SESSION["UserName"])) {
 		header("Location: Login.php");
 		die();
-	}
+	}*/
 ?>
 <?php include("Includes/header.php"); ?>
 <?php include("Includes/fdaApi.php"); ?>
-<script type="text/javascript" src="Scripts/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="Scripts/IndexScripts.js"></script>
 <div class="container">
   <div class="row search">
@@ -30,13 +29,13 @@
           <div class="col-xs-2">
             <div class="form-group">
               <label for="StartDate">Start Date</label>
-              <input type="text" class="form-control" id="recalSTDate" placeholder="Start Date"/>
+              <input type="text" class="form-control" readonly id="recalSTDate" placeholder="YYYYMMDD"/>
             </div>
           </div>
           <div class="col-xs-2">
             <div class="form-group">
               <label for="EndDate">End Date</label>
-              <input type="text" class="form-control" id="recalENDate" placeholder="End Date"/>
+              <input type="text" class="form-control" readonly id="recalENDate" placeholder="YYYYMMDD"/>
             </div>
           </div>
           <div class="col-xs-2">

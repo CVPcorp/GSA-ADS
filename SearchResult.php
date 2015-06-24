@@ -2,23 +2,21 @@
 error_reporting(0);
 include("Includes/fdaApi.php"); ?>
 <?php $results = searchApi($_POST);?>
-
-<table width="50%" border="1">
-    <thead><tr>
-        <td>S.No.</td>
-        <td>Recall Firm</td>
-        <td>Recall initiation Date</td>
-        <td>State</td>
-        <td>City</td>
-        <td>Country</td>
-        <td>Product Description</td>
-    </tr></thead>
+<table class="table table-striped table-bordered">
+            <thead>
+              <tr>
+                <th>Recall Firm</th>
+                <th>Date</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Country</th>
+                <th>Product Description</th>
+              </tr>
+            </thead>
+            <tbody>
 	<?php 
-	$count = 1;
-
 	foreach($results as $result) {?>
         <tr>
-            <td><?php echo $count?></td>
             <td><?php echo $result->recalling_firm ?></td>
             <td><?php echo $result->recall_initiation_date?></td>
             <td><?php echo $result->state?></td>
@@ -27,5 +25,6 @@ include("Includes/fdaApi.php"); ?>
             <td><?php echo $result->product_description?></td>
         </tr>
 
-	<?php $count++; }?>
+	<?php }?>
+		</tbody>
 </table>

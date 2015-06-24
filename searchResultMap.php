@@ -7,7 +7,8 @@ $mapData=[];
 $i=1;
 foreach($results as $result) {
     if(!in_array($result->recalling_firm,$firm)){
-    $url = "http://maps.google.com/maps/api/geocode/json?address=".$result->city.','.$result->state.','.$result->country.'&'."sensor=false";
+    $url = "http://maps.google.com/maps/api/geocode/json?address=".$result->city.",".$result->state.",".$result->country."&sensor=false";
+    $url = str_replace(' ','%20',$url);
     $json = file_get_contents(str_replace('&amp;','&',$url));
     $obj= json_decode($json);
 

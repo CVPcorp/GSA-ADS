@@ -25,25 +25,25 @@ The search results can be narrowed by specifying a range of dates for the report
       		</div>
       	</div>
         <div class="row">
-          <div class="col-xs-4">
+          <div class="col-xs-10 col-sm-6 col-md-4">
             <div class="form-group">
               <label for="Search">Search</label>
               <input type="text" class="form-control" id="searchTerm" placeholder="Search"/>
             </div>
           </div>
-          <div class="col-xs-2">
+          <div class="col-xs-10 col-sm-6 col-md-2">
             <div class="form-group">
               <label for="StartDate">Start Date</label>
               <input type="text" class="form-control" readonly id="recalSTDate" placeholder="YYYYMMDD"/>
             </div>
           </div>
-          <div class="col-xs-2">
+          <div class="col-xs-10 col-sm-6 col-md-2">
             <div class="form-group">
               <label for="EndDate">End Date</label>
               <input type="text" class="form-control" readonly id="recalENDate" placeholder="YYYYMMDD"/>
             </div>
           </div>
-          <div class="col-xs-2">
+          <div class="col-xs-10 col-sm-6 col-md-2">
             <div class="form-group">
               <label for="EndDate">Limit</label>
               <select class="form-control" id="limit" style="width:50%">
@@ -55,11 +55,11 @@ The search results can be narrowed by specifying a range of dates for the report
           </div>
         </div>
         <div class="row">
-        	<div class="col-xs-2">
+        	<div class="col-xs-10 col-sm-6 col-md-2">
         		<label for="Firm">Firm Name</label>
         		<input type="text" class="form-control" id="firmName" placeholder="Firm Name" />
         	</div>
-        	<div class="col-xs-2">
+        	<div class="col-xs-10 col-sm-6 col-md-2">
         		<label for="State">State</label>
 				<select class="form-control" id="state">
 					<option value="">Select State</option>

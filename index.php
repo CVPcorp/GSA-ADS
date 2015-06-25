@@ -9,6 +9,11 @@
 <?php include("Includes/fdaApi.php"); ?>
 <script type="text/javascript" src="Scripts/IndexScripts.js"></script>
 <div class="container">
+  <div class="row">
+  	<span>This prototype is used to display information about FDA Enforcement reports related to drug, medical device, or food recalls. The source of the data being displayed is +https://open.fda.gov/+. By entering query terms in the Search box, the user can pull representative records from the selected data sets. Results are displayed on a map and shown in tabular form. For this prototype, the total number of records returned is limited by the value set using the Limit dropdown. This Limit is enforced to ensure that we do not exceed quotas set by FDA for querying the datasets and by Google for returning map coordinates.)
+The search results can be narrowed by specifying a range of dates for the reports.</span>
+  </div>
+  <br/>
   <div class="row search">
     <form>
       <div class="col-xs-10">
@@ -41,7 +46,7 @@
           <div class="col-xs-2">
             <div class="form-group">
               <label for="EndDate">Limit</label>
-              <select class="form-control" id="limit">
+              <select class="form-control" id="limit" style="width:50%">
               	<?php for($i=1; $i <= 100; $i++) { ?>
               		<option><?php echo $i ?></option>
               	<?php } ?>

@@ -23,16 +23,16 @@ function searchApi($term) {
             $search=$search.'recall_initiation_date:['.date('Ymd',strtotime($term['RecalSTDate'])).'+TO+'.date('Ymd',strtotime($term['RecalENDate'])).']';
         }
     //}
-    elseif($term['RecalSTDate']!=''||$term['RecalENDate']!=''){
+    /*elseif($term['RecalSTDate']!=''||$term['RecalENDate']!=''){
         if($term['RecalSTDate']=='')$term['RecalSTDate']=date('Ymd');
         if($term['RecalENDate']=='')$term['RecalENDate']=date('Ymd');
         $search='recall_initiation_date:['.$term['RecalSTDate'].'+TO+'.$term['RecalENDate'].']';
-    }
+    }*/
     //$search=$search.'&limit=4';
 	$json = file_get_contents(str_replace(' ','%20','https://api.fda.gov/' . $term['Type'] . '/enforcement.json?api_key=Uv4W3UJHpj9uCAOLY7WQTJcmtDtrqGNTdYcw6Y2O&search=' . $search . '&limit=' . $term['Limit']));
 	$obj = json_decode($json);
 	
-    if(is_object($obj->error)) echo '<b>No Search data found for the above criteria </b>';
+    if(isset($obj->error)) echo '<b>No Search data found for the above criteria </b>';
 
     return $obj->results;
 }

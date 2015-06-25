@@ -1,21 +1,23 @@
 <?php include('database.php'); ?>
 <?php 
-
 	function submitUser($User) 
 	{
 		$conn = getConnection();
-		$UserName = $conn->real_escape_string($User['UserName']);
+		$UserName = " "; //$conn->real_escape_string($User['UserName']);
 		$Password = $conn->real_escape_string($User['Password']);
+		$ConfirmPassword = $conn->real_escape_string($User['ConfirmPassword']);
 		$Email = $conn->real_escape_string($User['Email']);
+		if($Password != $ConfirmPassword)
+			return "Your passwords do not match";
 		if(empty($UserName) || empty($Password) || empty($Email) )
 		{
 			return "You're missing fields";
 		}
 		else
 		{
-			$user = $conn->query("SELECT * FROM Users WHERE UserName='".$UserName."'");
+			$user = $conn->query("SELECT * FROM Users WHERE Email='" . $Email . "'");
 			if($user->num_rows > 0) {
-				return "User already exists.";
+				return "That email address is already registered. Click <a href='Login.php'>here</a> to login. Please contact the system administrator if you need your password reset.";
 			}
 			else {
 				$sql = "INSERT INTO Users (UserName, Password, Email, EmailConfirm)
@@ -37,7 +39,7 @@
 		$UserName = $conn->real_escape_string($User['UserName']);
 		$Password = $conn->real_escape_string($User['Password']);
 		
-		$sql = "SELECT * FROM Users WHERE UserName='". $UserName ."' AND Password='".md5($Password)."'";
+		$sql = "SELECT * FROM Users WHERE (UserName='". $UserName ."' OR Email='" . $UserName . "' )AND Password='".md5($Password)."'";
 		$result = $conn->query($sql);
 		if ($result->num_rows > 0) {
 			if(!isset($_SESSION)) {

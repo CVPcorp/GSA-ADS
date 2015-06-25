@@ -9,7 +9,7 @@
     <meta name="author" content="">
  
 
-    <title>Signin</title>
+    <title>FDA Enforcement Reports Mapping Prototype</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -17,9 +17,9 @@
     <!-- Custom styles for this template -->
     <link href="css/sign-in.css" rel="stylesheet">
 
-      <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-      <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+      <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
       <link rel="stylesheet" href="resources/demos/style.css">
       <script>
           $(function() {

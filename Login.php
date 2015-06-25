@@ -4,8 +4,9 @@
       <form class="form-signin">
 		<div id="results"></div>
         <h2 class="form-signin-heading">Please sign in</h2>
+        <label>This web site requires that all users login to access the FDA Enforcement Reports Mapping Prototype. If you do not have an account, please click the "Create an account" link.</label>
         <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" id="UserName" class="form-control" placeholder="User Name" required autofocus>
+        <input type="email" id="UserName" class="form-control" placeholder="Email Address" required autofocus>
         <label for="inputPassword" class="sr-only">Password</label>
         <input type="password" id="Password" class="form-control" placeholder="Password" required>
         <div class="checkbox">

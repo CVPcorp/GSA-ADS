@@ -41,7 +41,7 @@
 		
 		$sql = "SELECT * FROM Users WHERE (UserName='". $UserName ."' OR Email='" . $UserName . "' )AND Password='".md5($Password)."'";
 		$result = $conn->query($sql);
-		if ($result->num_rows > 0) {
+		if (isset($result) && $result->num_rows > 0) {
 			if(!isset($_SESSION)) {
 				session_start();
 			}

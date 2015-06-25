@@ -41,12 +41,18 @@
 		
 		$sql = "SELECT * FROM Users WHERE (UserName='". $UserName ."' OR Email='" . $UserName . "' )AND Password='".md5($Password)."'";
 		$result = $conn->query($sql);
-		if (isset($result->num_rows) && $result->num_rows > 0) {
-			if(!isset($_SESSION)) {
-				session_start();
+		if(isset($result->num_rows))
+		{
+			if ($result->num_rows > 0) {
+				if(!isset($_SESSION)) {
+					session_start();
+				}
+				$_SESSION["UserName"] = $UserName;
+				return "Logged In";
 			}
-			$_SESSION["UserName"] = $UserName;
-			return "Logged In";
+			else {
+				return "User information is incorrect";
+			}
 		}
 		else {
 			return "User information is incorrect";

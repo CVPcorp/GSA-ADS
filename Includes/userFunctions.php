@@ -16,7 +16,10 @@
 		else
 		{
 			$user = $conn->query("SELECT * FROM Users WHERE Email='" . $Email . "'");
-			if($user->num_rows > 0) {
+			if(!isset($user->num_rows)) {
+				return "That email address is already registered. Click <a href='Login.php'>here</a> to login. Please contact the system administrator if you need your password reset.";
+			}
+			else if($user->num_rows > 0) {
 				return "That email address is already registered. Click <a href='Login.php'>here</a> to login. Please contact the system administrator if you need your password reset.";
 			}
 			else {

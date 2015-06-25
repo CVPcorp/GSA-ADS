@@ -128,8 +128,11 @@ The search results can be narrowed by specifying a range of dates for the report
   <br/>
   <div class="row">
     <div class="col-sm-12">
-		<script src="https://maps.google.com/maps/api/js?sensor=false"
+		<script src="http://maps.google.com/maps/api/js?key=AIzaSyB4PVzOYG0aKkYfutnM84MgUqoggoRZJZ4&sensor=false"
 		        type="text/javascript"></script>
+        <div id="wait" style="display:none">
+            <p><img src="images/loader.gif" /> Please Wait</p>
+        </div>
 		<div id="map" style="width: 1136px; height: 325px;"></div>
 	</div>
   </div>

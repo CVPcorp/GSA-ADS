@@ -13,6 +13,7 @@ function searchAlerts() {
         $("#results").html(data);
     });
 
+	$('#wait').show();
     $.post("searchResultMap.php", model, function(data1){
         locations = JSON.parse(data1);
         //alert(locations);
@@ -49,6 +50,7 @@ function searchAlerts() {
                 }
             })(marker, i));
         }
+        $('#wait').hide();
     });
     //style="width: 500px; height: 400px;float: left;display: none"s
 }

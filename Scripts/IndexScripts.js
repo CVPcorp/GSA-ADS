@@ -5,7 +5,9 @@ function searchAlerts() {
 			SearchTerm: $("#searchTerm").val(),
             RecalSTDate: $("#recalSTDate").val(),
             RecalENDate: $("#recalENDate").val(),
-            Limit: $("#limit").val()
+            Limit: $("#limit").val(),
+            Firm: $("#firmName").val(),
+            State: $("#state").val()
 	}
     $.post("SearchResult.php", model, function(data){
         $("#results").html(data);

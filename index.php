@@ -1,9 +1,9 @@
 <?php 
 	session_start();
-	/*if(is_null($_SESSION["UserName"])) {
+	if(is_null($_SESSION["UserName"])) {
 		header("Location: Login.php");
 		die();
-	}*/
+	}
 ?>
 <?php include("Includes/header.php"); ?>
 <?php include("Includes/fdaApi.php"); ?>

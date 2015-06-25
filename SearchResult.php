@@ -19,8 +19,8 @@ include("Includes/fdaApi.php"); ?>
         <tr>
             <td><?php echo $result->recalling_firm ?></td>
             <td><?php echo $result->recall_initiation_date?></td>
-            <td><?php echo $result->state?></td>
             <td><?php echo $result->city?></td>
+            <td><?php echo $result->state?></td>
             <td><?php echo $result->country?></td>
             <td><?php echo $result->product_description?></td>
         </tr>

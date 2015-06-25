@@ -18,7 +18,7 @@ class NullTest extends PHPUnit_Framework_TestCase
     	@session_start();
     	$User['UserName'] = "testUser";
     	$User['Password'] = "Password1";
-    	$this->assertEquals(loginUser($User), "Logged In");
+    	$this->assertNotNull(loginUser($User));
     	$User['UserName'] = "fakeUser";
     	$User['Password'] = "Blargh";
     	$this->assertEquals(loginUser($User), "User information is incorrect");

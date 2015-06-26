@@ -13,6 +13,13 @@ function searchAlerts() {
         $("#results").html(data);
     });
 
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom:4,
+        //center: new google.maps.LatLng(-33.950198, 151.259302),
+        center: new google.maps.LatLng(41.850033, -87.6500523),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+    
 	$('#wait').show();
     $.post("searchResultMap.php", model, function(data1){
         locations = JSON.parse(data1);
@@ -26,12 +33,12 @@ function searchAlerts() {
          ];*/
         //var locations = [["Novartis Pharmaceuticals Corp.",41.1148179,-74.1495889,1],["Novartis Pharmaceuticals Corp.",41.1148179,-74.1495889,2],["Healthy Life Chemistry Inc dba Purity First",null,null,3],["Noven Pharmaceuticals, Inc.",25.7616798,-80.1917902,4]];
         //$("#results").html(data);
-        var map = new google.maps.Map(document.getElementById('map'), {
+        /*var map = new google.maps.Map(document.getElementById('map'), {
             zoom:4,
             //center: new google.maps.LatLng(-33.950198, 151.259302),
             center: new google.maps.LatLng(41.850033, -87.6500523),
             mapTypeId: google.maps.MapTypeId.ROADMAP
-        });
+        });*/
 
         var infowindow = new google.maps.InfoWindow();
 

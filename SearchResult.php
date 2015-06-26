@@ -10,6 +10,7 @@ include("Includes/fdaApi.php"); ?>
                 <th>City</th>
                 <th>State</th>
                 <th>Country</th>
+                <th>Reason For Recall</th>
                 <th>Product Description</th>
               </tr>
             </thead>
@@ -22,6 +23,7 @@ include("Includes/fdaApi.php"); ?>
             <td><?php echo $result->city?></td>
             <td><?php echo $result->state?></td>
             <td><?php echo $result->country?></td>
+            <td><?php echo $result->reason_for_recall?></td>
             <td><?php echo $result->product_description?></td>
         </tr>
 

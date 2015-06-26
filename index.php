@@ -62,7 +62,7 @@ The search results can be narrowed by specifying a range of dates for the report
         	<div class="col-xs-10 col-sm-6 col-md-2">
         		<label for="State">State</label>
 				<select class="form-control" id="state">
-					<option value="">Select State</option>
+					<option value=""></option>
 					<option value="AL">Alabama</option>
 					<option value="AK">Alaska</option>
 					<option value="AZ">Arizona</option>

@@ -15,6 +15,9 @@ function searchApi($term) {
         		$search=$search.'+AND+';
         	$search=$search.'state:'.$term['State'];
         }
+        if($term['RecalSTDate']=='' && $term['RecalENDate']!='') {
+        	$term['RecalSTDate']='19000101';
+        }
         if($term['RecalSTDate']!=''||$term['RecalENDate']!=''){
             if($term['RecalSTDate']=='')$term['RecalSTDate']=date('Ymd');
             if($term['RecalENDate']=='')$term['RecalENDate']=date('Ymd');

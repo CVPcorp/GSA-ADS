@@ -10,7 +10,12 @@ function searchApi($term) {
         		$search=$search.'+AND+';
         	$search=$search.'recalling_firm:'.$term['Firm'];
         }
-        if($term['State']!=''){
+        if($term['State'] == 'null') {
+        	if($search != '')
+        		$search=$search.'+AND+';
+        	$search=$search.'_missing_:state';
+        }
+        else if($term['State']!=''){
         	if($search != '')
         		$search=$search.'+AND+';
         	$search=$search.'state:"'.$term['State'].'"';

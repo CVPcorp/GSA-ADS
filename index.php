@@ -114,6 +114,7 @@ The search results can be narrowed by specifying a range of dates for the report
 					<option value="WV">West Virginia</option>
 					<option value="WI">Wisconsin</option>
 					<option value="WY">Wyoming</option>
+					<option value="null">Outside US</option>
 				</select>
         	</div>
         </div>

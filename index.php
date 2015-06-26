@@ -46,7 +46,7 @@ The search results can be narrowed by specifying a range of dates for the report
           <div class="col-xs-10 col-sm-6 col-md-2">
             <div class="form-group">
               <label for="EndDate">Limit</label>
-              <select class="form-control" id="limit" style="width:50%">
+              <select class="form-control" id="limit" style="width:70%">
               	<?php for($i=1; $i <= 100; $i++) { ?>
               		<option><?php echo $i ?></option>
               	<?php } ?>

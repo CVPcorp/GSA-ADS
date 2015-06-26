@@ -32,7 +32,7 @@ function searchApi($term) {
 	$json = file_get_contents(str_replace(' ','%20','https://api.fda.gov/' . $term['Type'] . '/enforcement.json?api_key=Uv4W3UJHpj9uCAOLY7WQTJcmtDtrqGNTdYcw6Y2O&search=' . $search . '&limit=' . $term['Limit']));
 	$obj = json_decode($json);
 	
-    if(isset($obj->error)) echo '<b>No Search data found for the above criteria </b>';
+    if(isset($obj->error)) echo '<b>No Search data found for the above criteria </b><script type="text/javascript">$("#wait").hide();</script>';
 
     return $obj->results;
 }

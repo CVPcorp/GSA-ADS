@@ -13,7 +13,7 @@ function searchApi($term) {
         if($term['State']!=''){
         	if($search != '')
         		$search=$search.'+AND+';
-        	$search=$search.'state:'.$term['State'];
+        	$search=$search.'state:"'.$term['State'].'"';
         }
         if($term['RecalSTDate']=='' && $term['RecalENDate']!='') {
         	$term['RecalSTDate']='19000101';

@@ -10,8 +10,14 @@
 <script type="text/javascript" src="Scripts/IndexScripts.js"></script>
 <div class="container">
   <div class="row">
-  	<span>This prototype is used to display information about FDA Enforcement reports related to drug, medical device, or food recalls. The source of the data being displayed is +https://open.fda.gov/+. By entering query terms in the Search box, the user can pull representative records from the selected data sets. Results are displayed on a map and shown in tabular form. For this prototype, the total number of records returned is limited by the value set using the Limit dropdown. This Limit is enforced to ensure that we do not exceed quotas set by FDA for querying the datasets and by Google for returning map coordinates.)
-The search results can be narrowed by specifying a range of dates for the reports.</span>
+  	<span>This prototype displays extracts from FDA Enforcement reports for drug, medical device, and food recalls. 
+  		The data is sourced from <a href="https://open.fda.gov/" target="_blank">https://open.fda.gov/</a>.
+  		<br/><br/>
+		Select the Dataset of interest and enter query terms in the Search box. You can refine your search by limiting the search 
+		to a report Release Date within a specified range, by specifying a Firm Name, or by picking a specific State where the 
+		firms are located. You may also choose the number of Results to be displayed, up to 100. (Note: For this prototype, 
+		the number of records is limited to ensure that we do not exceed quotas set by FDA for querying the datasets and by Google 
+		for returning map coordinates.)</span>
   </div>
   <br/>
   <div class="row search">
@@ -19,6 +25,7 @@ The search results can be narrowed by specifying a range of dates for the report
       <div class="col-xs-10">
       	<div class="row">
       		<div class="col-xs-10">
+      			<label for="Dataset">Reports Dataset:</label>
       			<input type="radio" name="type" value="drug" checked /> <label>Drug</label>
       			<input type="radio" name="type" value="device" /> <label>Device</label>
       			<input type="radio" name="type" value="food" /> <label>Food</label>
@@ -33,19 +40,19 @@ The search results can be narrowed by specifying a range of dates for the report
           </div>
           <div class="col-xs-10 col-sm-6 col-md-2">
             <div class="form-group">
-              <label for="StartDate">Start Date</label>
+              <label for="StartDate">Release Begin Date</label>
               <input type="text" class="form-control" readonly id="recalSTDate" placeholder="YYYYMMDD"/>
             </div>
           </div>
           <div class="col-xs-10 col-sm-6 col-md-2">
             <div class="form-group">
-              <label for="EndDate">End Date</label>
+              <label for="EndDate">Release End Date</label>
               <input type="text" class="form-control" readonly id="recalENDate" placeholder="YYYYMMDD"/>
             </div>
           </div>
           <div class="col-xs-10 col-sm-6 col-md-2">
             <div class="form-group">
-              <label for="EndDate">Limit</label>
+              <label for="EndDate">Results</label>
               <select class="form-control" id="limit" style="width:70%">
               	<?php for($i=1; $i <= 100; $i++) { ?>
               		<option><?php echo $i ?></option>
@@ -121,7 +128,7 @@ The search results can be narrowed by specifying a range of dates for the report
         <br/>
         <div class="col-xs-10">
 	        <input type="button" class="btn btn-primary" onclick="searchAlerts();" value="Search" />
-	        <button class="btn btn-default"> Reset </button>
+	        <button class="btn btn-success"> Reset </button>
         </div>
       </div>
     </form>

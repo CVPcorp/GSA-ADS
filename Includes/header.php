@@ -57,7 +57,7 @@
       <a class="navbar-brand" href="index.php">GSA Agile Delivery Services <br/>FDA Enforcement Reports Mapping Prototype</a> </div>
     <div id="navbar" class="navbar-collapse collapse">
     	<div class="navbar-right" style="background-color: white;padding:5px;">
-    		<a href="http://www.cvpcorp.com">
+    		<a href="http://www.cvpcorp.com" target="_blank">
 				<img src="images/2015-CVP-Logo-Cropped.png" alt="CVP Logo" />
 			</a>
 		</div>

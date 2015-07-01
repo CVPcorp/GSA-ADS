@@ -1,0 +1,101 @@
+GSA-ADS Installation Guide
+--------------------------
+Note: the demo environment was created using Bitnami AMIs and AWS. Your configuration needs may differ and the configuration files contained in the repository may need to be altered for your installation.
+
+OVERVIEW:
+Basic Environment Installation Requirements:
+	*LAMP Server
+	*CI Server
+	*Code Repository (GitHub)
+
+	Optional Environment Features:
+	*Load Balancer
+	*LAMP/App server scaling infrastructure
+	
+Basic Software Requirements and Dependencies:
+	Application Server:
+	*Ubuntu 14.04 LTS (other Linux operating systems are compatible but may require additional configuration)
+	*Apache 2.4.x
+	*MySQL 5.6.x
+	*PHP 5.5.x
+
+	CI Server:
+	*Ubuntu 14.04 LTS (other Linux operating systems are compatible but may require additional configuration)
+	*Jenkins 1.614 or later
+	*Git
+		-Needed for testing on the CI Server (optional):
+		*Apache 2.4.x
+		*MySQL 5.6.x
+		*PHP 5.5.x
+
+APPLICATION SERVER INSTALLATION:
+
+	Log into the Application Server then install the individual applications as directed.
+	
+	- Install the Ubuntu 14.04LTS Server Operating System using provided installation media
+	
+	- Ubuntu LAMP package installation
+	Run the following commands in order to download and install the LAMP application stack for your server.
+		sudo apt-get update
+		sudo apt-get install lamp-server^
+	
+		* Alternate individual package installation
+		- Install Apache using the following commands:
+			sudo apt-get update
+			sudo apt-get install apache2 apache2-utils
+		
+		- Install MySQL using the following commands:
+			sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql
+			sudo mysql_install_db
+			sudo mysql_secure_installation
+		
+		- Install PHP using the following commands:
+			sudo apt-get install php5 php5-mysql php-pear php5-gd  php5-mcrypt php5-curl
+			
+	- LAMP stack configuration.
+		- Link configurations to repository
+			create a symbolic links for your apache.conf, my.cnf, and php.ini files to the confs directory 
+			Note: depending on your environment you may instead want to copy these configuration files and make
+			changes to them based off of your own needs. Your file paths may differ from what is in the configuration files.
+			
+		- Initialize gsadb database
+		Enter the MySQL command line and run the following commands
+			create database gsadb;
+			grant all on gsadb to '%'@'localhost';
+			flush privileges;
+		
+		From the command prompt run the following after creating the gsadb database
+		Note: you may need to specify a user and password
+			mysql gsadb < gsadb_schema.sql 
+			gsadb_schema.sql can be found in the confs folder.
+	
+CONTINUOUS INTEGRATION SERVER INSTALLATION:	
+
+	- Git installation
+	Run the following command to install Git
+		sudo apt-get install git-core
+		
+	- Clone the CVP Corp GSA-ADS repository to your working directory
+		git clone https://github.com/CVPcorp/GSA-ADS
+		
+	-Install Jenkins
+	Run these commands in order to install Jenkins
+		wget -q -O - https://jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
+		sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources.list.d/jenkins.list'
+		sudo apt-get update
+		sudo apt-get install jenkins
+		
+	-Configure Jenkins
+		To configure Jenkins use the web interface.
+		
+		Install Git plugin in Jenkins by navigating to 
+			Manage Jenkins >> Manage Plugins 
+		Navigate to the following page 
+			Manage Jenkins >> Configure System and find the Git plugin section 
+				Enter the username and email of your github account
+		Setup jobs 
+			Example job configurations have been provided in the jobs
+			folder, but you will need to make changes based on your environment.
+		
+		
+	

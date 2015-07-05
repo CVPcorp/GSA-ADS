@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>[#ADS-54] Review layout #2 for usability and human factors</title>
+    <meta http-equiv="Content-Type" Content="application/vnd.ms-word; charset=UTF-8">
+        <style type="text/css">
+
+.tableBorder, .grid
+{
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableBorder td, .grid td
+{
+    vertical-align: top;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.noPadding
+{
+    padding: 0 !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom:none;
+    padding: 2px;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+#descriptionArea
+{
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+hr
+{
+    border-top:1px solid #aaa;
+}
+
+hr.fullcontent
+{
+  height: 15px;
+  padding: 10px 0;
+  background: #fff url('https://jira01.cvpcorp.com/images/icons/hr.gif') no-repeat scroll center;
+}
+
+</style>
+
+</head>
+<body>
+
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <b><a id="parent_issue_summary" href="https://jira01.cvpcorp.com/browse/ADS-118">As a Visual Designer, I want to refine the layout of display elements</a></b>
+                <span style="font-size: 9px">(<a id="parent_issue_key" href="https://jira01.cvpcorp.com/browse/ADS-118">ADS-118</a>)</span>
+                <h3 class="formtitle"><img src="https://jira01.cvpcorp.com/images/icons/link_out_bot.gif" width="16" height="16" />
+                        [ADS-54]&nbsp;<a href="https://jira01.cvpcorp.com/browse/ADS-54">Review layout #2 for usability and human factors</a>
+            <span class="subText">
+               Created: 19/Jun/15                   &nbsp;Updated: 05/Jul/15
+
+                                                    &nbsp;Resolved: 26/Jun/15
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Resolved</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://jira01.cvpcorp.com/secure/BrowseProject.jspa?id=11301">GSA ADS</a></td>
+    </tr>
+
+    
+
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Sub-task
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Mandatory
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="dougtaphouse" id="word_reporter_dougtaphouse" href="https://jira01.cvpcorp.com/secure/ViewProfile.jspa?name=dougtaphouse">Doug Taphouse</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="petebelli" id="word_assignee_petebelli" href="https://jira01.cvpcorp.com/secure/ViewProfile.jspa?name=petebelli">Pete Belli</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Fixed
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-20128-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            0 minutes
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            1 hour
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            30 minutes
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10401-20128-value" class="value" bgcolor="#ffffff" width="80%">ADS 4</td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>Conduct a probable user test to review a user's ability to conduct three tasks: <br/>
+1. Heuristic: Does the user find the site intuitive without prompting?<br/>
+2. Heuristic: Is the user able to use the site search functions without prompting?<br/>
+3. Heuristic: What errors does the user encounter in conducting the search?</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-17249"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="petebelli" id="word_commented_petebelli" href="https://jira01.cvpcorp.com/secure/ViewProfile.jspa?name=petebelli">Pete Belli</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">26/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-17249"><td bgcolor="#ffffff">
+            <p>Results from User Centered Design Testing:</p>
+
+<p>Search Boxes:<br/>
+1.	User question: What do the radio selections mean?<br/>
+2.	The date format is not good. Should be: MM/DD/YYYY<br/>
+3.	The date field cannot be deleted to blank. (user hit the browser’s back button and not the “Clear” button multiple times.)<br/>
+4.	The date labels are not intuitive in that “Start” and “End” are not self explanatory. <br/>
+5.	The date labels should have tool tips for explanation.<br/>
+6.	What does limit mean?<br/>
+7.	How is the limit decided in terms of priority?<br/>
+8.	The Limit field should have a tool tip to explain.<br/>
+Table:<br/>
+1.	User question: How is the search result relevant to the “Product Description?” For example, the user searched by “egg” and the results showed ice cream. It is an assumption that ice cream contains egg. This is not readily clear.<br/>
+2.	It was not evident to the user as to how the “Date” field on the table relates to the date parameters in the search.<br/>
+3.	The headers should have tool tips.</p>
+
+<p>Errors:<br/>
+1. The user clicked on the browser back button when the intent was to clear the search fields. In doing so the user was taken to the log-in page and out of the search.</p>
+        </td></tr>
+            </table>
+Generated at Sun Jul 05 14:20:50 EDT 2015 by Doug Taphouse using JIRA 6.3.15#6346-sha1:dbc023dd75cecacf443c4b235f66124b15f5c5fe.
+
+</body>
+</html>

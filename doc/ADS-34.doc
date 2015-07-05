@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>[#ADS-34] As a Product Manager, I need to understand the Users&#39; basic requirements</title>
+    <meta http-equiv="Content-Type" Content="application/vnd.ms-word; charset=UTF-8">
+        <style type="text/css">
+
+.tableBorder, .grid
+{
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableBorder td, .grid td
+{
+    vertical-align: top;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.noPadding
+{
+    padding: 0 !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom:none;
+    padding: 2px;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+#descriptionArea
+{
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+hr
+{
+    border-top:1px solid #aaa;
+}
+
+hr.fullcontent
+{
+  height: 15px;
+  padding: 10px 0;
+  background: #fff url('https://jira01.cvpcorp.com/images/icons/hr.gif') no-repeat scroll center;
+}
+
+</style>
+
+</head>
+<body>
+
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [ADS-34]&nbsp;<a href="https://jira01.cvpcorp.com/browse/ADS-34">As a Product Manager, I need to understand the Users&#39; basic requirements</a>
+            <span class="subText">
+               Created: 18/Jun/15                   &nbsp;Updated: 18/Jun/15
+
+                                                    &nbsp;Resolved: 18/Jun/15
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Resolved</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://jira01.cvpcorp.com/secure/BrowseProject.jspa?id=11301">GSA ADS</a></td>
+    </tr>
+
+    
+
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Story
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Mandatory
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="dougtaphouse" id="word_reporter_dougtaphouse" href="https://jira01.cvpcorp.com/secure/ViewProfile.jspa?name=dougtaphouse">Doug Taphouse</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="gusvazquez" id="word_assignee_gusvazquez" href="https://jira01.cvpcorp.com/secure/ViewProfile.jspa?name=gusvazquez">Gus Vazquez</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-20107-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            0 minutes
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            2 hours
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            2 hours
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+            <tr>
+            <td bgcolor="#f0f0f0" width="20%" valign="top">
+                <b>Issue Links:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" class="noPadding">
+                <table cellpadding="0" cellspacing="0" border="0" width="100%" class="blank">
+                                            <tr>
+                            <td colspan="4" bgcolor="#f0f0f0">
+                                <b>Realizes</b><br/>
+                            </td>
+                        </tr>
+                                    <tr>
+            <td>
+                realizes
+            </td>
+            <td>
+                <a href="https://jira01.cvpcorp.com/browse/ADS-3">
+                     ADS-3                 </a>
+            </td>
+            <td>
+                Shall understand what people need
+            </td>
+            <td>
+                Open
+            </td>
+        </tr>
+                                                                            <tr>
+                            <td colspan="4" bgcolor="#f0f0f0">
+                                <b>Relates</b><br/>
+                            </td>
+                        </tr>
+                                    <tr>
+            <td>
+                relates to
+            </td>
+            <td>
+                <a href="https://jira01.cvpcorp.com/browse/ADS-42">
+                     <strike>ADS-42</strike>                 </a>
+            </td>
+            <td>
+                As a Business Analyst, I need to refi...
+            </td>
+            <td>
+                Resolved
+            </td>
+        </tr>
+            <tr>
+            <td>
+                relates to
+            </td>
+            <td>
+                <a href="https://jira01.cvpcorp.com/browse/ADS-43">
+                     <strike>ADS-43</strike>                 </a>
+            </td>
+            <td>
+                As a Business Analyst, I need to refi...
+            </td>
+            <td>
+                Resolved
+            </td>
+        </tr>
+                                        <tr>
+            <td>
+                is related to
+            </td>
+            <td>
+                <a href="https://jira01.cvpcorp.com/browse/ADS-40">
+                     <strike>ADS-40</strike>                 </a>
+            </td>
+            <td>
+                As a Business Analyst, I need to refi...
+            </td>
+            <td>
+                Resolved
+            </td>
+        </tr>
+                                        </table>
+            </td>
+        </tr>
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10401-20107-value" class="value" bgcolor="#ffffff" width="80%">ADS 1</td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>Determine basic, high level requirements for:</p>
+<ul class="alternate" type="square">
+	<li>Data set of interest</li>
+	<li>Data elements of interest within the data set</li>
+	<li>Visualization options</li>
+	<li>Data selection and filtering options</li>
+	<li>Performance requirements</li>
+	<li>Security requirements</li>
+	<li>Accessibility requirements (e.g. section 508?)</li>
+</ul>
+
+
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-17018"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="gusvazquez" id="word_commented_gusvazquez" href="https://jira01.cvpcorp.com/secure/ViewProfile.jspa?name=gusvazquez">Gus Vazquez</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">18/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-17018"><td bgcolor="#ffffff">
+            <p>Results from user meeting conducted 6/18 with Anirudh (typical citizen user) and Krithi (healthcare user) determined the following:<br/>
+Determine basic, high level requirements </p>
+<ul class="alternate" type="square">
+	<li>Web site should provide a simple easy to use interface that will allow a non-technical user to extract data from the FDA API. Provide several display options for the data returned from the API</li>
+</ul>
+
+
+<p>Data set of interest</p>
+<ul class="alternate" type="square">
+	<li>The web site should return all data available through the API and allow the selection of parameters that are relevant to the API such as date range, notice type (enforcement action, etc), etc.</li>
+</ul>
+
+
+<p>Data elements of interest within the data set</p>
+<ul class="alternate" type="square">
+	<li>All available data elements available through the API should be returned; Displays may only display the most relevant data elements</li>
+</ul>
+
+
+<p>Visualization options</p>
+<ul class="alternate" type="square">
+	<li>Data elements returned should be provide in multiple forms including tabular, graphical and geographical.</li>
+</ul>
+
+
+<p>Data selection and filtering options</p>
+<ul class="alternate" type="square">
+	<li>See statements above</li>
+</ul>
+
+
+<p>Performance requirements</p>
+<ul class="alternate" type="square">
+	<li>Query performance is based on the API performance. Web site capabilities should respond with 1-2 sections depending on amount of data returned from the API</li>
+</ul>
+
+
+<p>Security requirements</p>
+<ul class="alternate" type="square">
+	<li>Basic security (SSL, TLS) should be put in place; Vulnerabilities for each version of system software being used should be identified</li>
+</ul>
+
+
+<p>Accessibility requirements (e.g. section 508?)</p>
+<ul class="alternate" type="square">
+	<li>No 508 requirements are identified at this time but may be included later. The web site should be accessible across multiple devices.</li>
+</ul>
+
+        </td></tr>
+            </table>
+Generated at Sun Jul 05 11:32:55 EDT 2015 by Doug Taphouse using JIRA 6.3.15#6346-sha1:dbc023dd75cecacf443c4b235f66124b15f5c5fe.
+
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>[#ADS-192] Only entered End Date; no results returned</title>
+    <meta http-equiv="Content-Type" Content="application/vnd.ms-word; charset=UTF-8">
+        <style type="text/css">
+
+.tableBorder, .grid
+{
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableBorder td, .grid td
+{
+    vertical-align: top;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.noPadding
+{
+    padding: 0 !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom:none;
+    padding: 2px;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+#descriptionArea
+{
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+hr
+{
+    border-top:1px solid #aaa;
+}
+
+hr.fullcontent
+{
+  height: 15px;
+  padding: 10px 0;
+  background: #fff url('https://jira01.cvpcorp.com/images/icons/hr.gif') no-repeat scroll center;
+}
+
+</style>
+
+</head>
+<body>
+
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [ADS-192]&nbsp;<a href="https://jira01.cvpcorp.com/browse/ADS-192">Only entered End Date; no results returned</a>
+            <span class="subText">
+               Created: 25/Jun/15                   &nbsp;Updated: 05/Jul/15
+
+                                                    &nbsp;Resolved: 25/Jun/15
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Resolved</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://jira01.cvpcorp.com/secure/BrowseProject.jspa?id=11301">GSA ADS</a></td>
+    </tr>
+
+    
+
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Major
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="dougtaphouse" id="word_reporter_dougtaphouse" href="https://jira01.cvpcorp.com/secure/ViewProfile.jspa?name=dougtaphouse">Doug Taphouse</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="christopherchen" id="word_assignee_christopherchen" href="https://jira01.cvpcorp.com/secure/ViewProfile.jspa?name=christopherchen">Christopher Chen</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Fixed
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-20302-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            0 minutes
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            30 minutes
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            0 minutes
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+            <tr>
+            <td bgcolor="#f0f0f0" width="20%" valign="top">
+                <b>Issue Links:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" class="noPadding">
+                <table cellpadding="0" cellspacing="0" border="0" width="100%" class="blank">
+                                            <tr>
+                            <td colspan="4" bgcolor="#f0f0f0">
+                                <b>Relates</b><br/>
+                            </td>
+                        </tr>
+                                    <tr>
+            <td>
+                relates to
+            </td>
+            <td>
+                <a href="https://jira01.cvpcorp.com/browse/ADS-4">
+                     ADS-4                 </a>
+            </td>
+            <td>
+                Shall use human-centered design
+            </td>
+            <td>
+                Open
+            </td>
+        </tr>
+            <tr>
+            <td>
+                relates to
+            </td>
+            <td>
+                <a href="https://jira01.cvpcorp.com/browse/ADS-20">
+                     ADS-20                 </a>
+            </td>
+            <td>
+                Shall use an iterative approach
+            </td>
+            <td>
+                Open
+            </td>
+        </tr>
+                                                                    </table>
+            </td>
+        </tr>
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10401-20302-value" class="value" bgcolor="#ffffff" width="80%">ADS 4</td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>I entered an end date of 20130602 and clicked Search.</p>
+
+<p>No results... just "Please wait"</p>
+
+<p>Same behavior observed with other end dates.</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-17232"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="christopherchen" id="word_commented_christopherchen" href="https://jira01.cvpcorp.com/secure/ViewProfile.jspa?name=christopherchen">Christopher Chen</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">25/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-17232"><td bgcolor="#ffffff">
+            <p><a href="https://jira01.cvpcorp.com/secure/ViewProfile.jspa?name=dougtaphouse" class="user-hover" rel="dougtaphouse">Doug Taphouse</a> So, that happens because it doesn't complete a query.  What do you think it should do?  Error out, return as if there was no end date?</p>
+        </td></tr>
+                <tr id="comment-header-17234"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="dougtaphouse" id="word_commented_dougtaphouse" href="https://jira01.cvpcorp.com/secure/ViewProfile.jspa?name=dougtaphouse">Doug Taphouse</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">25/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-17234"><td bgcolor="#ffffff">
+            <p>It should return all records with dates equal to or less than the selected end date. (Appropriate to the other search terms)</p>
+        </td></tr>
+                <tr id="comment-header-17236"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="christopherchen" id="word_commented_christopherchen" href="https://jira01.cvpcorp.com/secure/ViewProfile.jspa?name=christopherchen">Christopher Chen</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">25/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-17236"><td bgcolor="#ffffff">
+            <p>There's no inception date.  I mean we can make one up if start date is empty but we'll have  to randomly select one.</p>
+        </td></tr>
+                <tr id="comment-header-17238"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="dougtaphouse" id="word_commented_dougtaphouse" href="https://jira01.cvpcorp.com/secure/ViewProfile.jspa?name=dougtaphouse">Doug Taphouse</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">25/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-17238"><td bgcolor="#ffffff">
+            <p>19000101 should suffice</p>
+        </td></tr>
+                <tr id="comment-header-17242"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="christopherchen" id="word_commented_christopherchen" href="https://jira01.cvpcorp.com/secure/ViewProfile.jspa?name=christopherchen">Christopher Chen</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">25/Jun/15</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-17242"><td bgcolor="#ffffff">
+            <p>If end date is entered but start date is not, it now defaults to 19000101</p>
+        </td></tr>
+            </table>
+Generated at Sun Jul 05 15:25:01 EDT 2015 by Doug Taphouse using JIRA 6.3.15#6346-sha1:dbc023dd75cecacf443c4b235f66124b15f5c5fe.
+
+</body>
+</html>

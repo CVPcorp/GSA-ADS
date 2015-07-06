@@ -1,11 +1,11 @@
-URL: https://gsa-ads.cvpcorp.com
+Customer Value Partners prototype URL: https://gsa-ads.cvpcorp.com
 
-Documentation regarding this prototype is in the \doc folder within the github repository.
+Documentation regarding this prototype can be found in the \doc folder within the github repository (https://github.com/CVPcorp/GSA-ADS).
 
-Our approach is founded on CVP's standard Agile Enterprise (AgEnt) processes. Upon receipt of the GSA ADS RFQ, CVP convened senior staff and accomplished the following:
+Our approach is founded on CVP's standard Agile Enterprise (AgEnt) processes. Upon receipt of the GSA Agile Delivery Services (ADS) Request for Quote (RFQ), CVP convened senior staff and accomplished the following:
 - Assigned a single leader for the project, and gave that leader authority over all aspects.
-- Established a new Jira project, our standard tool for executing all agile projects. We documented all of the main RFQ instructions as "Requirements". Specific work activities were entered as User Stories or as Tasks. These were decomposed into smaller Subtasks, as appropriate. All team members used this tool to track and document progress. They add new items to the backlog, and continually added comments to tasks and subtasks as they make progress. Jira serves as the primary collaboration and documentation tool for all project activities.
-- Developed an overall project schedule. We broke the project into four two-day sprints so that we could iterate on design and development activities. In addition to development tasks, each sprint had four formal process events:
+- Established a new project within Jira, our standard tool for executing all agile projects. We documented all of the main RFQ instructions for the Full Stack Pool as "Requirements". Specific work activities were entered as User Stories or as Tasks. These were decomposed into smaller Subtasks, as appropriate. All team members used this tool to track and document progress. They added new items to the backlog, and continually added comments to tasks and subtasks as they made progress. Jira serves as the primary collaboration and documentation tool for all project activities.
+- Developed an overall project schedule. Given the short overall schedule, we originally broke the project into four two-day sprints so that we could iterate on design and development activities. In addition to development tasks, each sprint had four formal process events:
     - Planning: prioritize the backlog; assign tasks; estimate work effort
 	- Daily Scrums: a daily stand-up meeting for all team members to discuss: tasks completed yesterday; plans for today; impediments to progress.
 	- Demo: All team members demonstrate progress on assigned tasks. The Product Manager and other team members offer suggestions for improvement. The product backlog is updated and expanded.
@@ -16,18 +16,18 @@ Sprint 1 - Team Dev & Infrastructure:
 
 Assembling the right team: The following members were identified. Given the project's duration and scope, some of the team members were assigned more than one role:
 - Gus Vazquez		Product Manager
-- Doug Taphouse		Agile Coach, Business Analyst, Delivery Manager
+- Doug Taphouse		Agile Coach, Business Analyst, Delivery Manager, Writer / Content Designer/Strategist
 - Chris Chen		Technical Architect, Frontend Web Developer
 - Jake Munta		Backend Web Developer
 - Victoria Makinde	Visual Designer
 - Alex Dembski		DevOps Engineer
-- Pete Belli		Interaction Designer / User Researcher / Usability Tester, Writer / Content Designer/Strategist
+- Pete Belli		Interaction Designer / User Researcher / Usability Tester
 - Liz Nguyen		Security Engineer
 - (unassigned)		Digital Performance Analyst
 
 Immediate Sprint 1 tasks:
 - Select opensource technical architecture and tools
-- Set up basic infrastructure using an IaaS vendor (Amazon Web Services). Establish github repository for configuration management.
+- Set up basic infrastructure using an IaaS vendor (Amazon Web Services). Establish a github repository for configuration management.
 - Designated Mr. Anirudh Kulkarni as a representative user. In collaboration with the Product Manager and Business Analyst, he reviewed the available data and defined the basic prototype functions to be delivered
 
 
@@ -63,11 +63,7 @@ Sprint 4 - Final Prototype
 - The github repository was made public and will be locked down after all documentation is complete
 - The prototype web site will be locked down to prevent unauthorized modification.
 
-Sprint 5 - Refinements
-
-- RFQ mods provided more time for refining the prototype
-
-IMPORTANT NOTE: RFQ Mod 5 clarified requirements and specified that each pool must create a separate prototype. This was NOT anticipated. We decided to limit our submission to the Development pool. However, evidence is provided for a much larger range of activities that encompasses the interests of all three pools.
+RFQ modifications and date extensions provided more time for refining the prototype, and we adjusted the project schedule to extend the length of Sprint 5. In addition, we spent additional time at the end of the project to implement "docker" within our AWS environment as specified in the Technical Questions and Answers (#34).
 
 
 

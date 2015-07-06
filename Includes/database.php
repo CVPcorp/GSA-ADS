@@ -5,8 +5,8 @@ function getConnection() {
 	$password = "9TTsrqXMWiQi";
 	$database = "gsadb";
 	
-	// Create connection
-	$conn = new mysqli($servername, $username, $password, $database);
+	// Create connection: removed password arg to integrate Docker
+	$conn = new mysqli($servername, $username, $database);
 	
 	// Check connection
 	if ($conn->connect_error) {

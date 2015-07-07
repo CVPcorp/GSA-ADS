@@ -1,8 +1,9 @@
 GSA-ADS Installation Guide
 --------------------------
-Note: the demo environment was created using Bitnami AMIs and AWS. Your configuration needs may differ and the configuration files contained in the repository may need to be altered for your installation.
+
 
 OVERVIEW:
+
 Basic Environment Installation Requirements:
 	*LAMP Server
 	*CI Server
@@ -27,13 +28,103 @@ Basic Software Requirements and Dependencies:
 		*Apache 2.4.x
 		*MySQL 5.6.x
 		*PHP 5.5.x
+		*PHPUnit 4.7.5 or later
 
+CONTINUOUS INTEGRATION SERVER INSTALLATION:	
+
+	From the AWS Market Place launch an EC2 instance using the "Jenkins powered by Bitnami" AMI
+	This AMI will launch with all the necessary programs to run the Continuous Integration server.
+		
+	Once the instance has launched and is available please make an SSH connection to the instance using your selected
+	private key to begin configuring your CI server.
+	
+	- Git installation
+	Run the following command to install Git
+		sudo apt-get install git-core
+		
+	- Clone the CVP Corp GSA-ADS repository to your working directory
+		git clone https://github.com/CVPcorp/GSA-ADS
+		
+	-Configure Jenkins
+		To configure Jenkins use the web interface.
+		
+		- Install Git plugin in Jenkins by navigating to 
+			Manage Jenkins >> Manage Plugins 
+		- Navigate to the following page 
+			Manage Jenkins >> Configure System and find the Git plugin section 
+				Enter the username and email of your github account
+		- Setup jobs 
+			Example job configurations have been provided in the jobs
+			folder within the github repository, but you will need to make changes to the provided
+			GSA-ADS Deploy job to reference the private IP of your Application server once it has been launched.
+			
+			You will need to create at least 3 Jenkins jobs. These jobs are as follows:
+			- Pull changes from the Github repository and make the updated code available for testing and deployment.
+			- Perform testing on the newly obtained code.
+			- Deploy code that has passed testing to the application server.
+			
+			These jobs should be created as freestyle Jenkins projects and will execute bash commands to achieve their goal.	
+			If you wish to use our job configurations simply copy the config.xml files provided in the repository to:
+				/opt/bitnami/apps/jenkins/jenkins_home/jobs/<job-name>
+		
+	
+		
 APPLICATION SERVER INSTALLATION:
 
-	Log into the Application Server then install the individual applications as directed.
+	From the AWS Market Place launch an EC2 instance using the "LAMP Stack powered by Bitnami" AMI
+	This AMI will launch with all the necessary programs to run the web application. 
+	You should launch this server within the same VPC and region as your CI server to allow for connectivity
+	between the Application and CI servers using AWS private IPs.
 	
-	- Install the Ubuntu 14.04LTS Server Operating System using provided installation media
+	Please note, that should you wish to implement monitoring on your application server you should create 
+	or Select an IAM role for your EC2 instance that has at a minimum full access to AWS CloudWatch.
 	
+	Once the instance has launched and is available please make an SSH connection to the instance using your selected
+	private key to begin configuring your application server.
+
+			
+	- Application Server configuration.
+		- Link configurations to repository
+			create a symbolic links for your apache.conf, my.cnf, and php.ini files to the confs directory 
+			Note: depending on your needs you may instead want to copy these configuration files and make
+			changes to them instead of linking them to the files in the repository.
+				Links are as follows:
+				/opt/bitnami/apache2/conf/bitnami/bitnami.conf -> /opt/bitnami/apache2/htdocs/confs/apache.conf
+				/opt/bitnami/mysql/my.cnf -> /opt/bitnami/apache2/htdocs/confs/my.cnf
+				/opt/bitnami/php/etc/php.ini -> /opt/bitnami/apache2/htdocs/confs/php.ini
+			
+		- Initialize gsadb database
+		Enter the MySQL command line as the root user, using a blank password, and run the following commands
+			create database gsadb;
+			grant all on gsadb to '%'@'localhost';
+			flush privileges;
+		
+		- From the command prompt run the following after creating the gsadb database
+		Note: you will need to specify a user and password to connect to MySQL
+			mysql gsadb < gsadb_schema.sql 
+			gsadb_schema.sql can be found in the confs folder of the repository.
+	
+MONITORING:
+	
+	- To install the pre-requisites for monitoring using AWS CloudWatch metrics please run the following commands:
+		sudo apt-get update
+		sudo apt-get install unzip
+		sudo apt-get install libwww-perl libdatetime-perl
+		
+	- To download and unpack the monitoring scripts run these commands from your user's home folder:
+		wget http://aws-cloudwatch.s3.amazonaws.com/downloads/CloudWatchMonitoringScripts-1.2.1.zip
+		unzip CloudWatchMonitoringScripts-1.2.1.zip
+		rm CloudWatchMonitoringScripts-1.2.1.zip
+		
+	- Basic use of the monitoring scripts is as follows:
+		~/aws-scripts-mon/mon-put-instance-data.pl --<metrics>
+		
+		It is suggested that you select several metrics to monitor and export the metrics to CloudWatch using a cron job.
+		
+	Please refer to the AWS documentation for further details on the AWS CloudWatch monitoring scripts.
+	
+UNIT TESTING:
+
 	- Ubuntu LAMP package installation
 	Run the following commands in order to download and install the LAMP application stack for your server.
 		sudo apt-get update
@@ -51,51 +142,10 @@ APPLICATION SERVER INSTALLATION:
 		
 		- Install PHP using the following commands:
 			sudo apt-get install php5 php5-mysql php-pear php5-gd  php5-mcrypt php5-curl
-			
-	- LAMP stack configuration.
-		- Link configurations to repository
-			create a symbolic links for your apache.conf, my.cnf, and php.ini files to the confs directory 
-			Note: depending on your environment you may instead want to copy these configuration files and make
-			changes to them based off of your own needs. Your file paths may differ from what is in the configuration files.
-			
-		- Initialize gsadb database
-		Enter the MySQL command line and run the following commands
-			create database gsadb;
-			grant all on gsadb to '%'@'localhost';
-			flush privileges;
-		
-		From the command prompt run the following after creating the gsadb database
-		Note: you may need to specify a user and password
-			mysql gsadb < gsadb_schema.sql 
-			gsadb_schema.sql can be found in the confs folder.
 	
-CONTINUOUS INTEGRATION SERVER INSTALLATION:	
-
-	- Git installation
-	Run the following command to install Git
-		sudo apt-get install git-core
+	- After the required testing dependencies have been installed install PHPUnit with the following commands:
+		wget https://phar.phpunit.de/phpunit.phar
+		chmod +x phpunit.phar
+		mv phpunit.phar /usr/local/bin/phpunit
 		
-	- Clone the CVP Corp GSA-ADS repository to your working directory
-		git clone https://github.com/CVPcorp/GSA-ADS
-		
-	-Install Jenkins
-	Run these commands in order to install Jenkins
-		wget -q -O - https://jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
-		sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources.list.d/jenkins.list'
-		sudo apt-get update
-		sudo apt-get install jenkins
-		
-	-Configure Jenkins
-		To configure Jenkins use the web interface.
-		
-		Install Git plugin in Jenkins by navigating to 
-			Manage Jenkins >> Manage Plugins 
-		Navigate to the following page 
-			Manage Jenkins >> Configure System and find the Git plugin section 
-				Enter the username and email of your github account
-		Setup jobs 
-			Example job configurations have been provided in the jobs
-			folder, but you will need to make changes based on your environment.
-		
-		
-	
+	- The unit tests included in the repository can now be run successfully. 

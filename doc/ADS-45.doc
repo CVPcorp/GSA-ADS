@@ -80,16 +80,17 @@ hr.fullcontent
                             <h3 class="formtitle">
                         [ADS-45]&nbsp;<a href="https://jira01.cvpcorp.com/browse/ADS-45">Dev needs to create a search front end</a>
             <span class="subText">
-               Created: 19/Jun/15                   &nbsp;Updated: 05/Jul/15
+               Created: 19/Jun/15                   &nbsp;Updated: 07/Jul/15
 
                                     &nbsp;Due: 22/Jun/15
-                                            </span>
+                                                    &nbsp;Resolved: 07/Jul/15
+                            </span>
             </h3>
         </td>
     </tr>
     <tr>
         <td width="20%"><b>Status:</b></td>
-        <td width="80%">Open</td>
+        <td width="80%">Resolved</td>
     </tr>
     <tr>
         <td width="20%"><b>Project:</b></td>
@@ -146,7 +147,7 @@ hr.fullcontent
 			<b>Resolution:</b>
 		</td>
 		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
-            				Unresolved
+                            Fixed
                     </td>
                     <td bgcolor="#f0f0f0" width="20%">
                 <b>Votes:</b>
@@ -307,7 +308,7 @@ hr.fullcontent
             <p>Basic search across all fields in the selected data sets has been implemented.</p>
         </td></tr>
             </table>
-Generated at Sun Jul 05 11:53:48 EDT 2015 by Doug Taphouse using JIRA 6.3.15#6346-sha1:dbc023dd75cecacf443c4b235f66124b15f5c5fe.
+Generated at Tue Jul 07 06:30:10 EDT 2015 by Doug Taphouse using JIRA 6.3.15#6346-sha1:dbc023dd75cecacf443c4b235f66124b15f5c5fe.
 
 </body>
 </html>
